@@ -1,0 +1,26 @@
+# Logfile created on 2019-05-03 16:12:20 +0000 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-05-03 16:12:20 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [2d6401ca] Running [ -d $HOME/.rbenv/versions/2.6.1 ] as deploy@50.21.179.181
+ DEBUG [2d6401ca] Command: [ -d $HOME/.rbenv/versions/2.6.1 ]
+ DEBUG [5a2ab033] Finished in 6.828 seconds with exit status 0 (successful).
+ DEBUG [0369ca02] Running /usr/bin/env which passenger as deploy@50.21.179.181
+ DEBUG [0369ca02] Command: /usr/bin/env which passenger
+ DEBUG [839edeb6] 	/usr/bin/passenger
+ DEBUG [839edeb6] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [dd1387df] Running /usr/bin/env mkdir -p /tmp as deploy@50.21.179.181
+ DEBUG [dd1387df] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [afcd33d0] Finished in 0.045 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-stalkerapp-production-deploy.sh 0.0%
+  INFO Uploading /tmp/git-ssh-stalkerapp-production-deploy.sh 100.0%
+  INFO [ddff4ec9] Running /usr/bin/env chmod 700 /tmp/git-ssh-stalkerapp-production-deploy.sh as deploy@50.21.179.181
+ DEBUG [ddff4ec9] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-stalkerapp-production-deploy.sh )
+  INFO [daa1b204] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [bc527110] Running /usr/bin/env git ls-remote git@github.com:todx2/tedrepo.git HEAD as deploy@50.21.179.181
+ DEBUG [bc527110] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.6.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-stalkerapp-production-deploy.sh" ; /usr/bin/env git ls-remote git@github.com:todx2/tedrepo.git HEAD )
+ DEBUG [2f2c3b47] 	ERROR: Repository not found.
+ DEBUG [2f2c3b47] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
